@@ -1,0 +1,118 @@
+<div class="navbar">
+  <a href="introduction.html">معرفی</a>
+  <a href="Abilities.html">مهارت و توانمندی ها</a>
+  <a href="Honors.html">افتخارات و دستاورد ها</a>
+  <a href="Contactme.html">تماس با من</a>
+</div>
+
+
+<div class="footer">
+  <p>Email Address: alialvandi99@yahoo.com</p>
+  <p> <a href= "https://stackoverflow.com/users/17526350/ali-alvandi">StackOverflow</a> </p>
+  <p><a href = "https://github.com/AliAvd">Github</a> </p>
+</div>
+
+
+
+
+
+
+
+
+<head>
+	<title>
+
+	Contact me
+	
+	</title>
+	<style>
+	
+	
+	
+	input[type=text]{
+	width:50%;
+	padding:12px 10px;
+	margin:10px 0;
+	box-sizing: border-box;
+	}
+	/* Add a black background color to the top navigation */
+		.navbar {
+		  background-color: #00008B;
+		  overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		.navbar a {
+		  float: right;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		/* Change the color of links on hover */
+		.navbar a:hover {
+		  background-color: #04AA6D;
+		  color: white;
+		}
+		
+		
+		
+		
+		
+		
+		
+		.footer {
+			position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				background-color: yellow;
+				color: black;
+				text-align: left;
+				}
+	
+	</style>
+
+
+</head>
+
+
+
+<body style = "direction:rtl;">
+	
+	<h2> برای تماس با من اطلاعات خود را وارد کنید: </h2>
+	<form>
+	<label for="fname">نام:
+	</label><br>
+	<input type="text" id="fname" name = "fname"><br>
+	<label for="lname">نام خانوادگی:
+	</label><br>
+	<input type="text" id="lname" name="lname"><br>
+	<label for="emailadd">آدرس ایمیل:
+	</label><br>
+	<input type = "text" id="emailadd" name = "emailadd"><br>
+	<label for="Message">محتوای پیام:
+	</label><br>
+	<input type="text" id="Message" name = "Message"><br>
+	</form>
+	<button onclick="myFunction()">Submit</button>
+	<p id="demo"></p>
+	<script>
+	function myFunction(){
+	let text;
+	if (confirm("آیا از ارسال فرم اطمینان دارید؟") == true){
+	text = "عملیات موفقیت آمیز بود!";}
+	else {
+	text = "عملیات انجام نشد!"
+	}
+	document.getElementById("demo").innerHTML = text;
+	}
+	</script>
+	
+	
+
+
+
+</body>
